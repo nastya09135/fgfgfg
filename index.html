@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js.js">
     <title>Document</title>
 </head>
 
@@ -72,15 +73,16 @@
         </div>
 
     </div>
+    <div class="wrapper"></div>
     <div class="cart wrapper">
 
-        <img src="/img/fit988x988-image-2739-1615812077.jpg" alt="">
+        <img src="./img/СФКЕ.jpg" alt="">
 
     </div>
     <div id="main">
         <section class="main_page_filter">
             <h2 class="main_page_title">ВЫБРАТЬ ПУТЕШЕСТВИЕ</h2>
-            <!--- <div class="main_page_filter_content">
+            <div class="main_page_filter_content">
                 <form id="main-page-hike-search-form" action="/route " metho="get">
                     <div>
                         <div class="main_page_filter_col">
@@ -102,45 +104,84 @@
                                     <select id="routesearch-direction" class="styled select2-hidden-accessible"
                                         name="RouteSearch[direction][]" multiple size="4" data-placeholder="Выберите..."
                                         data-multiple="true" data-select2-id="routesearch-direction" tabindex="-1"
-                                        aria-hidden="true" 
-                                        <optgroup label="Россия">
-                                        <option value="3">Алтай</option>
-                                        <option value="4">Байкал</option>
-                                        <option value="76">Башкортостан</option>
-                                        <option value="8">Восхождение на Эльбрус</option>
-                                        <option value="94">Дагестан</option>
-                                        <option value="2">Кавказ</option>
+                                        aria-hidden="true">
+                                        <optgroup label="Россия" data-select2-id="10">
+                                            <option value="3" data-select2-id="11">Алтай</option>
+                                            <option value="4" data-select2-id="12">Байкал</option>
+                                            <option value="76" data-select2-id="13">Башкортостан</option>
+                                            <option value="8" data-select2-id="14">Восхождение на Эльбрус</option>
+                                            <option value="94" data-select2-id="15">Дагестан</option>
+                                            <option value="2">Кавказ</option>
+                                        </optgroup>
+                                        <optgroup label="Европа" data-select2-id="35">
+                                            <option value="49" data-select2-id="36">Австралия</option>
+                                            <option value="86" data-select2-id="37">Португалия</option>
+                                            <option value="78" data-select2-id="38">Сербия</option>
+                                            <option value="79" data-select2-id="39">Словения</option>
+                                            <option value="29" data-select2-id="40">Черногория</option>
+
                                         </optgroup>
                                     </select>
+                                    <span
+                                        class="select2 select2-container select2-container--default select2-container--below"
+                                        dir="Itr" data-select2-id="1" style="width: 100%;">
+                                        <span class="selection">
+                                            <span class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1"
+                                                aria-disabled="false">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline">
+                                                        <input class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="none"
+                                                            spellcheck="false" role="searchbox" aria-autocomplete="list"
+                                                            placeholderstyle="width: 166px;">
+                                                    </li>
+                                                </ul>
+
+                                            </span>
+                                        </span>
+                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                    </span>
                                 </div>
                             </div>
-
                         </div>
+<div class="main_page_filter_col second_wid">
+    <div class="main_page_filter_box_field inline">
+<div class="field-routesearch-tag1">
+<label for="">Типы путешествий</label>
+<section id="routesearch-tag1" class="styled select2-hidden-accessible" name="RouteSearch[tag1][]" multiple size="4" data-placeholder="Выберите..." data-multiple="true" data-select2-id="routesearch-tag1" aria-hidden="true"></section>
+</div>
+    </div>
+</div>
                     </div>
-            </div>-->
+            </div>
+
             <section>
-                <h3 class="main_page_title">
-                    <a href="   ">Походы выходного дня</a>
-                </h3>
-                <div class="additional-title-text">
-                    Приглашаем в незабываемые приключения на выходные в кругу друзей.</div>
-                <ul class="page-list">
-                    <li>
-                        <a href=" " class="image-centered-wrapper">
-                            <img src="https://b1.vpoxod.ru/seoImg/8a/90/122483_929x221.jpg" height="221" alt="" weight="929" loading="lazy"> 
-                                <span class="page-text">На выходные из Петербурга</span>
-                                <span class="page-counter">93 заезда </span></a>
-                    </li>
-                    <li>
-                        <a href="/route/pokhody-na-vykhodnyye-v-podmoskovye" class="image-centered-wrapper">
-                            <img src="https://b1.vpoxod.ru/seoImg/45/a0/122484_929x221.jpg" height="221" alt="" weight="929" loading="lazy"> 
-                            <span class="page-text">На выходные в Подмосковье</span>
-                            <span class="page-counter"> 51 заезд </span>
-                           
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                <div class="pohod">
+                    <h3 class="main_page_title">
+                        <a href="">Походы выходного дня</a>
+                    </h3>
+
+                    <div class="invitation">
+                        Приглашаем в незабываемые приключения на выходные в кругу друзей.</div>
+                </div>
+    </div>
+    <div class="grid">
+        <div><img src=".//img/theme-tracking.jpg" alt="" width="700px" height="300px">
+            <div class="text1">
+                <a href="">На выходные из Петербурга</a>
+            </div>
+        </div>
+        <div>
+            <img src="./img/CHto-nuzhno-dlya-puteshestviya.jpg" alt="" width="700px" height="300px">
+            <div class="text1">
+                <a href="">На выходные в Подмосковье</a>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
     </div>
     </form>
     </section>
