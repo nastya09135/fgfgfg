@@ -1,0 +1,142 @@
+body {
+    background: -webkit-linear-gradient(90deg, #e5b2a9, #ddd1c5, #d1dbad, #92ad76);
+    background: linear-gradient(90deg, #e5b2a9, #ddd1c5, #d1dbad, #92ad76);
+}
+
+.wrapper {
+    max-width: 100%;
+    padding-left: 500px;
+    padding-right: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #72975d;
+
+}
+
+.header {
+    background-color: #72975d;
+    height: 60px;
+}
+
+.header2 {
+    background-color: #f8f8f8;
+    height: 60px;
+}
+.main_page_title {
+    font: 600 30px/1 "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    color: #353535;
+}
+.cart {}
+
+.main_page_articles {
+    width: 1200px;
+    margin: auto;
+    padding: 0 40px 46px;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+section {
+    display: block;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+a {
+    color: #38322f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.additional-title-text {
+    font-size: 15px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul li {
+    list-style: none;
+}
+
+.page-list {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-centered-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+}
+
+.image-centered-wrapper img {
+    object-fit: cover;
+}
+
+.page-list .page-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffffffeb;
+    padding: 2px 4px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.page-list .page-text {
+    display: flex;
+    bottom: 0;
+    padding: 20px 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: block;
+ 
+}
+
+.page-list .page-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffffffeb;
+    padding: 2px 4px;
+    font-weight: 600;
+    border-radius: 6px;
+}
