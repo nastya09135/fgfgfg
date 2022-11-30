@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="logo"></div>
     <div class="header">
 
         <div class="wrapper">
@@ -40,15 +41,17 @@
                                 <button class="btn btn-light text-white" type="submit"><img src="img/search--v4.png"
                                         alt="" width="30px"></button>
                             </form>
+
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+
     <div class="header2">
         <div class="wrapper">
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg bg-green">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,109 +82,129 @@
         <img src="./img/СФКЕ.jpg" alt="">
 
     </div>
-    <div id="main">
-        <section class="main_page_filter">
-            <h2 class="main_page_title">ВЫБРАТЬ ПУТЕШЕСТВИЕ</h2>
-            <div class="main_page_filter_content">
-                <form id="main-page-hike-search-form" action="/route " metho="get">
-                    <div>
-                        <div class="main_page_filter_col">
-                            <div class="main_page_filter_box_field range_inputs inline js-datepickers-range-wrapper">
-                                <ladel>Сроки</ladel>
-                                <p class="label">с</p>
-                                <input type="text" id="hikesearch-date-from" class="styled hasDatepicker"
-                                    name="RouteSearch[dateFrom]" title="Сроки" placeholder="дд.мм.гггг">
-                                <p class="label last">по</p>
-                                <input type="text" id="hikesearch-date-to" class="styled hasDatepicker"
-                                    name="RouteSearch[dateTo]" title="Сроки" placeholder="дд.мм.гггг">
 
-                            </div>
-                        </div>
-                        <div class="main_page_filter_col second_wid">
-                            <div class="main_page_filter_box_field inline">
-                                <div class="field-routesearch-direction">
-                                    <label>Регион</label>
-                                    <select id="routesearch-direction" class="styled select2-hidden-accessible"
-                                        name="RouteSearch[direction][]" multiple size="4" data-placeholder="Выберите..."
-                                        data-multiple="true" data-select2-id="routesearch-direction" tabindex="-1"
-                                        aria-hidden="true">
-                                        <optgroup label="Россия" data-select2-id="10">
-                                            <option value="3" data-select2-id="11">Алтай</option>
-                                            <option value="4" data-select2-id="12">Байкал</option>
-                                            <option value="76" data-select2-id="13">Башкортостан</option>
-                                            <option value="8" data-select2-id="14">Восхождение на Эльбрус</option>
-                                            <option value="94" data-select2-id="15">Дагестан</option>
-                                            <option value="2">Кавказ</option>
-                                        </optgroup>
-                                        <optgroup label="Европа" data-select2-id="35">
-                                            <option value="49" data-select2-id="36">Австралия</option>
-                                            <option value="86" data-select2-id="37">Португалия</option>
-                                            <option value="78" data-select2-id="38">Сербия</option>
-                                            <option value="79" data-select2-id="39">Словения</option>
-                                            <option value="29" data-select2-id="40">Черногория</option>
+    <section1 class="form_turist">
+        <form class="row g-3">
+            <h2 class="advance" id="booking">Выбрать путешествие!</h2>
 
-                                        </optgroup>
-                                    </select>
-                                    <span
-                                        class="select2 select2-container select2-container--default select2-container--below"
-                                        dir="Itr" data-select2-id="1" style="width: 100%;">
-                                        <span class="selection">
-                                            <span class="select2-selection select2-selection--multiple" role="combobox"
-                                                aria-haspopup="true" aria-expanded="false" tabindex="-1"
-                                                aria-disabled="false">
-                                                <ul class="select2-selection__rendered">
-                                                    <li class="select2-search select2-search--inline">
-                                                        <input class="select2-search__field" type="search" tabindex="0"
-                                                            autocomplete="off" autocorrect="off" autocapitalize="none"
-                                                            spellcheck="false" role="searchbox" aria-autocomplete="list"
-                                                            placeholderstyle="width: 166px;">
-                                                    </li>
-                                                </ul>
-
-                                            </span>
-                                        </span>
-                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-<div class="main_page_filter_col second_wid">
-    <div class="main_page_filter_box_field inline">
-<div class="field-routesearch-tag1">
-<label for="">Типы путешествий</label>
-<section id="routesearch-tag1" class="styled select2-hidden-accessible" name="RouteSearch[tag1][]" multiple size="4" data-placeholder="Выберите..." data-multiple="true" data-select2-id="routesearch-tag1" aria-hidden="true"></section>
-</div>
-    </div>
-</div>
-                    </div>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Начало путешествия</label>
+                <input type="date" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Конец путешествия</label>
+                <input type="date" class="form-control" id="validationDefault02" value="" required>
             </div>
 
-            <section>
-                <div class="pohod">
-                    <h3 class="main_page_title">
-                        <a href="">Походы выходного дня</a>
-                    </h3>
-
-                    <div class="invitation">
-                        Приглашаем в незабываемые приключения на выходные в кругу друзей.</div>
-                </div>
-    </div>
-    <div class="grid">
-        <div><img src=".//img/theme-tracking.jpg" alt="" width="700px" height="300px">
-            <div class="text1">
-                <a href="">На выходные из Петербурга</a>
+            <div class="col-md-4"><label for="validationDefault02" class="form-label">Город</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите город</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                    <option value="4">Ярославль</option>
+                    <option value="5">Тула</option>
+                    <option value="6">Сочи</option>
+                    <option value="7">Ростов Великий</option>
+                    <option value="8">Дмитров</option>
+                    <option value="9">Севастополь</option>
+                    <option value="10">Тверь</option>
+                    <option value="11">Екатеринбург</option>
+                </select>
             </div>
+
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Тип путешествия</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="12">Вело</option>
+                    <option value="13">Водные</option>
+                    <option value="14">Восхождения</option>
+                    <option value="15">Горные лыжи/сноуборд</option>
+                    <option value="16">Горный лагерь</option>
+                    <option value="17">Зимний</option>
+                    <option value="18">На выходные</option>
+                    <option value="19">Пешие</option>
+                    <option value="20">Разведки</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Сложность</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="21">Для всех</option>
+                    <option value="22">Легкий</option>
+                    <option value="23">Средняя сложность</option>
+                    <option value="24">Сложный</option>
+                    <option value="25">Сложный/требуется подготовка</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Далее</button>
+            </div>
+        </form>
+    </section1>
+
+    <section>
+        <div class="pohod">
+            <h3 class="main_page_title">
+                <a href="">О компании</a>
+            </h3>
+            <div class="deviz">
+                Исполнить мечты просто!</div>
         </div>
-        <div>
-            <img src="./img/CHto-nuzhno-dlya-puteshestviya.jpg" alt="" width="700px" height="300px">
-            <div class="text1">
-                <a href="">На выходные в Подмосковье</a>
+        </section>
+        <section>
+            <h3 class="main_page_title">
+                <a href="">О компании</a>
+            </h3>
+        </section>
+        <section class="">
+          
+            <h3 class="main_page_title">
+                <a href="">Отзывы</a>
+            </h3>
+            <div class="wrapper">
+            <div class="o1">
+                Автор: Дмитрий (29.11.2022)
+                <div class="o11">
+                <p>Огромное СПАСИБО за четкую и грамотную организацию похода! Не мастер я отзывы писать, но хочется отметить, что по маршруту нас вели замечательные ребята: Настя Хакимова, Стас Лысенко и Ольга Вербицкая( надеюсь, фамилии написала правильно!). Без них я бы вряд ли осилила Тропу!) Координаторы тоже большие молодцы: мои вопросы не оставили без ответов, это мне очень помогло в сборах, ведь я впервые ехала в Турцию...Очень волновалась, как буду добираться от Антальи до Фетхие,но инструкция оказалась буквально пошаговой! Да и группа у нас собралась замечательная: активная, музыкальная, думающая. Это очень ценно в наше непростое время...</p>
+            </div></div>
+            <div class="o2">
+                Автор: Оксана (15.5.2022)
+                <div class="o22">
+                <p>Потрясающе красивая природа! Интересная, динамичная река ! Изысканные походные блюда и травяные чаи! Практически ежедневные(ежевечерние) пешие прогулки! Много интересных зверюшек:суслики, бурундуки, орлы, косули... Ну и коровы, конечно.
+                    На мой взгляд, за счет динамичности реки, будет интересно и для любителей "порожистых" рек Северной Карелии и Кольского.
+                    Спасибо Алтаю и нашим чудесным и неутомимым инструкторам!</p>
+            </div></div>
+            <div class="o3">
+                Автор: Оксана (15.5.2022)
+                <div class="o33">
+                <p>Всем здравствуйте!
+
+                    Оценка 9 из 10 по моей шкале (10 - "такого не бывает").
+                    
+                    Прекрасная природа, легкий морозец, снег,
+                    протяженный маршрут (ходить - много), слегка подмерзшее болото,
+                    гибридный брод (часть - в жидкой воде, часть - по твердой воде),
+                    море шуток, смеха, веселья, позитива.
+                    Что же еще надо, чтобы хорошо отдохнуть на выходных? :)
+                    
+                    Всем спасибо за прекрасную компанию!</p>
+            </div></div></div>
+        </div> 
+        </section>
+        <footer>
+            <div class="contact">
+                <p>+7 (800) 555-33-10</p>
+                <p>Turist_pro@gmail.com</p>
             </div>
-
-        </div>
-
-    </div>
-    </section>
+            <div class="niz">
+                <a href="">Главная</a>
+                <a href="">О компании</a>
+                <a href="">Отзывы</a>
+            </div>
+        </footer>
+   
     </div>
     </form>
     </section>
