@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="wrapper">
+            <div class="topline__content">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                                <button class="btn btn-light text-white" type="submit"><img src="img/search--v4.png"
+                                        alt="" width="30px"></button>
+                            </form>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="header2">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg bg-green">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wrapper"></div>
+    <div class="cart wrapper">
+
+        <img src="./img/fit988x.jpg" alt="">
+
+    </div>
+    <section1 class="form_turist">
+        <form class="row g-3">
+            <h2 class="advance" id="booking">Поиска маршрутов</h2>
+
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Выберите даты похода</label>
+                <input type="date" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4"><label for="validationDefault02" class="form-label">Регион</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите...</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                    <option value="4">Ярославль</option>
+                    <option value="5">Тула</option>
+                    <option value="6">Сочи</option>
+                    <option value="7">Ростов Великий</option>
+                    <option value="8">Дмитров</option>
+                    <option value="9">Севастополь</option>
+                    <option value="10">Тверь</option>
+                    <option value="11">Екатеринбург</option>
+                </select>
+            </div>
+
+            <div class="col-md-4"><label for="validationDefault02" class="form-label">Название маршрута</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите  маршрута</option>
+                    <option value="1">Большая Байкальская тропа (ББТ)</option>
+                    <option value="2">Кроноцкий биосферный заповедник, Камчатка</option>
+                    <option value="4">Вдоль хребта горы Белухи, Алтай</option>
+                    <option value="5">Южный Урал, Челябинск</option>
+                    <option value="6">Столбы, Красноярск</option>
+                    <option value="7">О-ва Кижи и Валаам, Карелия</option>
+                    <option value="8">Балаклава-Ласпи, Крымские тропы</option>
+                  
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Количество интересных зон</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="12">1</option>
+                    <option value="13">2</option>
+                    <option value="14">3</option>
+                    <option value="15">4</option>
+                
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Сложность</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Выберите...</option>
+                    <option value="21">Для всех</option>
+                    <option value="22">Легкий</option>
+                    <option value="23">Средняя сложность</option>
+                    <option value="24">Сложный</option>
+                    <option value="25">Сложный/требуется подготовка</option>
+                </select>
+            </div>
+            <div class="col-123">
+                <button class="btn btn-primary" type="submit"> <a href="./search.html">Выбрать зоны в маршруте</a></button>
+            </div>
+        </form>
+    </section1>
+    <footer>
+        <div class="contact ">
+            <a>+7 (800) 555-33-10</a>
+            <a>Turist_pro@gmail.com</a>
+        </div>
+        <div class="niz ">
+            <a href=" ">Главная</a>
+
+            <a href=" ">Отзывы</a>
+        </div>
+
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
