@@ -102,125 +102,165 @@
             <form class="row1 wrapper g-4">
 
 
-                <div class="col-md-5">
-                    <label for="validationDefault01" class="form-label">Регион: Ярославль</label>
-
-
+                <div class="col-50">
+                    <label for="validationDefault01" class="form-label">Выберите даты похода</label>
+                    <input type="date" class="form-control" id="validationDefault01" value="" required>
                 </div>
-                <div class="col-md-5">
-                    <label for="validationDefault02" class="form-label">Наименование маршрута: Южный Урал</label>
-
+                <div class="col-50"><label for="validationDefault02" class="form-label">Регион</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Выберите...</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="4">Ярославль</option>
+                        <option value="5">Тула</option>
+                        <option value="6">Сочи</option>
+                        <option value="7">Ростов Великий</option>
+                        <option value="8">Дмитров</option>
+                        <option value="9">Севастополь</option>
+                        <option value="10">Тверь</option>
+                        <option value="11">Екатеринбург</option>
+                    </select>
                 </div>
 
-                <div class="col-md-5"><label for="validationDefault02" class="form-label">Зоны для посещения: "Ворохта"</label>
-
+                <div class="col-50"><label for="validationDefault02" class="form-label">Название маршрута</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Выберите  маршрута</option>
+                        <option value="1">Большая Байкальская тропа (ББТ)</option>
+                        <option value="2">Кроноцкий биосферный заповедник, Камчатка</option>
+                        <option value="4">Вдоль хребта горы Белухи, Алтай</option>
+                        <option value="5">Южный Урал, Челябинск</option>
+                        <option value="6">Столбы, Красноярск</option>
+                        <option value="7">О-ва Кижи и Валаам, Карелия</option>
+                        <option value="8">Балаклава-Ласпи, Крымские тропы</option>
+                      
+                    </select>
                 </div>
 
-                <div class="col-md-5"><label for="validationDefault02" class="form-label">Даты похода: 05.07.23 - 25.07.23</label>
-
+                <div class="col-50">
+                    <label for=" validationDefault04 " class="form-label ">Количество интересных зон</label>
+                    <select class="form-select " id="validationDefault04 " required>
+                        <option selected disabled value=" ">Выберите...</option>
+                        <option value="12 ">1</option>
+                        <option value="13 ">2</option>
+                        <option value="14 ">3</option>
+                    
+                    
+                    </select>
                 </div>
-                <div class="col-md-5"><label for="validationDefault02" class="form-label">Количество человек: 5</label>
-
+                <div class="col-50">
+                    <label for=" validationDefault04 " class="form-label ">Количество человек</label>
+                    <select class="form-select " id="validationDefault04 " required>
+                        <option selected disabled value=" ">Выберите...</option>
+                        <option value="12 ">1</option>
+                        <option value="13 ">2</option>
+                        <option value="14 ">3</option>
+                        <option value="12 ">4</option>
+                        <option value="13 ">5</option>
+                        <option value="14 ">более 6</option>
+                    
+                    </select>
                 </div>
+    </div>
 
 
-            </form>
-        </section1>
+
+    </form>
+    </section1>
 
     </div>
 
     <section1 class="form_turist ">
-        <form class="row1 wrapper g-4">
-            <h2 class="advance1" id="booking">Дополнительные услуги</h2>
+        <form class="row1 wrapper g-4 ">
+            <h2 class="advance1 " id="booking ">Дополнительные услуги</h2>
 
-            <div class="col-md-5">
-                <label for="validationDefault01" class="form-label">Услуги проводника на маршрут</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+            <div class="col-md-5 ">
+                <label for="validationDefault01 " class="form-label ">Услуги проводника на маршрут</label>
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                     Да
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                     Нет
                     </label>
                 </div>
             </div>
-            <div class="col-md-5">
-                <label for="validationDefault02" class="form-label">Услуги оренды тур. оборудования</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+            <div class="col-md-5 ">
+                <label for="validationDefault02 " class="form-label ">Услуги оренды тур. оборудования</label>
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         Палатка
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         Рюкзак
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         Спальный мешок
                     </label>
                 </div>
 
             </div>
 
-            <div class="col-md-5"><label for="validationDefault02" class="form-label">Услуги фотографа/видеооператора
+            <div class="col-md-5 "><label for="validationDefault02 " class="form-label ">Услуги фотографа/видеооператора
                 </label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                     Да
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                     Нет
                     </label>
                 </div>
             </div>
 
-            <div class="col-md-5">
-                <label for="validationDefault04" class="form-label">Страхование от несчастных случаев</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+            <div class="col-md-5 ">
+                <label for="validationDefault04 " class="form-label ">Страхование от несчастных случаев</label>
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         От пумы
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         От камня
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " value=" " id="flexCheckDefault ">
+                    <label class="form-check-label " for="flexCheckDefault ">
                         От холода
                     </label>
                 </div>
 
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Эл. почта</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="mb-3 ">
+                    <label for="exampleFormControlInput1 " class="form-label ">Эл. почта</label>
+                    <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
                 </div>
-                <div class="mb-4">
-                    <label for="exampleFormControlTextarea1" class="form-label">Комментарий к заказу</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="mb-4 ">
+                    <label for="exampleFormControlTextarea1 " class="form-label ">Комментарий к заказу</label>
+                    <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
                 </div>
-                <div class="price">
-                    <label1 for="validationDefault04" class="form-label">Итоговая стоимость: 1520084 руб.</label1>
+                <div class="price ">
+                    <label1 for="validationDefault04 " class="form-label ">Итоговая стоимость: 1520084 руб.</label1>
                 </div>
-                <div class="col-125">
-                    <button class="btn btn-danger" type="submit"> <a href="">Забронировать</a></button>
+                <div class="col-125 ">
+                    <button class="btn btn-danger " type="submit "> <a href=" ">Забронировать</a></button>
                 </div>
             </div>
         </form>
@@ -233,7 +273,7 @@
             <a>Turist_pro@gmail.com</a>
         </div>
         <div class="niz ">
-            <a href="./index.html">Главная</a>
+            <a href="./index.html ">Главная</a>
 
             <a href=" ">Отзывы</a>
             <a href=" ">Акции</a>
@@ -241,7 +281,7 @@
 
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 " crossorigin="anonymous "></script>
 </body>
 
 </html>
